@@ -20,9 +20,9 @@ logger = get_logger()
 class OpenAIService(BaseService):
     openai_base_url: Annotated[
         str, "The base url to use for OpenAI-like models.  No trailing slash."
-    ] =  "http://192.168.1.28:9000/v1"
+    ] =  "http://132.145.115.205:9000/v1"
     openai_model: Annotated[str, "The model name to use for OpenAI-like model."] = (
-        "5CD-AI/Vintern-3B-beta"
+        "Qwen/Qwen2.5-VL-7B-Instruct"
     )
     openai_api_key: Annotated[
         str, "The API key to use for the OpenAI-like service."
