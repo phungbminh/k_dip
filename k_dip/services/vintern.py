@@ -19,8 +19,8 @@ class VinternService(BaseService):
     Service for using the OpenAI-like Chat API with support for text and multiple images.
     Sends each image in a separate request loop to respect single-image limits, aggregates responses.
     """
-    openai_base_url: str = "http://192.168.1.28:9000/v1"
-    openai_model: str = "5CD-AI/Vintern-3B-beta"
+    openai_base_url: str = "http://132.145.115.205:9000/v1"
+    openai_model: str = "Qwen/Qwen2.5-VL-7B-Instruct"
     openai_api_key: str = None
 
     def image_to_base64(self, image: PIL.Image.Image) -> str:
